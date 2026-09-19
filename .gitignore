@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /godot
+addons/debug_draw_3d

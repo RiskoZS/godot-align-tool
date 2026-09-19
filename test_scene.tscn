@@ -1,0 +1,193 @@
+[gd_scene format=3 uid="uid://cwvp52ijstfrt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_74gq0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6adnx"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uhqqe"]
+size = Vector3(2, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ia1lp"]
+size = Vector3(2, 1, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ugvw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_nbk7m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yi1vn"]
+size = Vector3(1.8817139, 1, 1)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_74gq0"]
+size = Vector2(64, 64)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sasra"]
+size = Vector2(64, 128)
+
+[node name="Test" type="Node" unique_id=861931436]
+
+[node name="Test3D" type="Node3D" parent="." unique_id=515487514]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Test3D" unique_id=35992957]
+transform = Transform3D(0.9679473, -0.1760593, -0.24709597, 3.7252903e-09, 3.8524618, -0.17902277, 0.25115335, 0.67853415, 0.95231, 0.52313364, 0.0043166913, 0.13636807)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Test3D" unique_id=1202882752]
+transform = Transform3D(2.8337672, 0, 0.30173987, 0, 1, 0, -0.89686304, 0, 0.95339036, 2.4222429, 0, -3.4662638)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Test3D" unique_id=1061738640]
+transform = Transform3D(0.9078836, 0, 0.41922238, 0, 1, 0, -0.41922238, 0, 0.9078836, 3.4609523, 0, 2.3861053)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Test3D" unique_id=977035105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5753701, 0, 8.662027)
+mesh = SubResource("BoxMesh_6adnx")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Test3D" unique_id=865752907]
+transform = Transform3D(0.9078836, 0, 0.41922238, 0, 1, 0, -0.41922238, 0, 0.9078836, 4.4841213, 0, 7.2923565)
+mesh = SubResource("BoxMesh_uhqqe")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Test3D/MeshInstance3D13" unique_id=826082349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.381824, 0, 2.5240533)
+mesh = SubResource("BoxMesh_ia1lp")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Test3D" unique_id=824673894]
+transform = Transform3D(0.91731733, -0.20944546, 0.33861706, 0.38032773, 0.7125821, -0.5895572, -0.117812395, 0.66959643, 0.7333217, 18.197132, 0, -1.1732101)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Test3D" unique_id=1793488868]
+transform = Transform3D(0.9934396, 0.029118335, -0.11058917, -7.450581e-09, 0.9670403, 0.25462353, 0.11435839, -0.25295305, 0.960696, 22.114698, 0, 0.5359766)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Test3D" unique_id=2124497449]
+transform = Transform3D(0.43995976, 0.019807585, 0.8977991, -0.15395439, 0.98661894, 0.05367705, -0.88472223, -0.16183582, 0.43712214, 23.870178, 0, -1.442611)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Test3D" unique_id=1155746610]
+transform = Transform3D(0.5176594, -0.2624435, 0.85698354, 0.60885, 0.853121, -0.008702263, -0.8506741, 0.45089692, 0.51527035, -2.1074288, 0.0043166876, -2.5224195)
+mesh = SubResource("BoxMesh_74gq0")
+skeleton = NodePath("../..")
+
+[node name="Marker3D" type="Marker3D" parent="Test3D" unique_id=45916375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.99181, 0, -1.6401274)
+
+[node name="Node3D" type="Node3D" parent="Test3D" unique_id=1415795012]
+transform = Transform3D(0.9533912, 0.21337622, -0.25410014, -0.11267542, 1.2761564, 0.20045973, 0.27990958, -0.21306716, 0.946176, 22.617859, 0, -4.080278)
+metadata/_edit_group_ = true
+
+[node name="Marker3D" type="Marker3D" parent="Test3D/Node3D" unique_id=1691520651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7503233, 0.85111344, 1.1712618)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Test3D/Node3D" unique_id=1380017981]
+mesh = SubResource("BoxMesh_4ugvw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Test3D/Node3D" unique_id=573537756]
+transform = Transform3D(1.2293675, 0, 0.632598, 0, 1, 0, -1.0041512, 0, 0.77448034, -1.5094061, 0.21190846, 0)
+mesh = SubResource("BoxMesh_4ugvw")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Test3D" unique_id=1358288617]
+transform = Transform3D(0.86602545, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, 0.86602545, -16.639029, 0.15344381, -0.36847776)
+mesh = SubResource("BoxMesh_nbk7m")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Test3D" unique_id=2065763820]
+transform = Transform3D(0.86602545, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, 0.86602545, -14.88724, 0.15344381, 0.64291763)
+mesh = SubResource("BoxMesh_nbk7m")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Test3D" unique_id=1631864208]
+transform = Transform3D(0.86602545, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, 0.86602545, -12.365606, 0.15344381, 2.0987835)
+mesh = SubResource("BoxMesh_yi1vn")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Test3D" unique_id=1585968580]
+transform = Transform3D(0.86602545, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, 0.86602545, -20.936697, 0.15344381, -2.8497381)
+mesh = SubResource("BoxMesh_yi1vn")
+skeleton = NodePath("../..")
+
+[node name="Test2D" type="Node2D" parent="." unique_id=1823748979]
+
+[node name="Sprite2D4" type="Sprite2D" parent="Test2D" unique_id=1885733975]
+position = Vector2(141, 30)
+rotation = -0.2617994
+texture = SubResource("PlaceholderTexture2D_74gq0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Test2D" unique_id=52288457]
+position = Vector2(562, 188)
+rotation = 0.43578437
+texture = SubResource("PlaceholderTexture2D_74gq0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Test2D" unique_id=2121896734]
+position = Vector2(178, 134)
+rotation = -0.16830043
+texture = SubResource("PlaceholderTexture2D_74gq0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Test2D" unique_id=574713495]
+position = Vector2(47, 61)
+texture = SubResource("PlaceholderTexture2D_74gq0")
+
+[node name="Label" type="Label" parent="Test2D" unique_id=1697133235]
+offset_left = 280.0
+offset_top = 62.0
+offset_right = 386.12268
+offset_bottom = 85.0
+rotation = 0.20372485
+text = "hello world2!"
+
+[node name="Label3" type="Label" parent="Test2D" unique_id=876496014]
+offset_left = 364.0
+offset_top = 8.0
+offset_right = 464.0
+offset_bottom = 31.0
+text = "hello world1!"
+
+[node name="Label2" type="Label" parent="Test2D" unique_id=1431860098]
+offset_left = 555.0
+offset_top = 73.0
+offset_right = 646.0
+offset_bottom = 96.0
+rotation = -0.21319799
+text = "hello world!"
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Test2D/Label2" unique_id=44252981]
+position = Vector2(89, 67)
+texture = SubResource("PlaceholderTexture2D_74gq0")
+
+[node name="Marker2D" type="Marker2D" parent="Test2D" unique_id=964950273]
+position = Vector2(482, 124)
+
+[node name="Marker2D2" type="Marker2D" parent="Test2D" unique_id=1978378567]
+position = Vector2(225, 53)
+rotation = -0.5418213
+
+[node name="Sprite2D5" type="Sprite2D" parent="Test2D" unique_id=1103857792]
+position = Vector2(5.343274, 484.42227)
+rotation = 0.667348
+texture = SubResource("PlaceholderTexture2D_sasra")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Test2D" unique_id=517109081]
+position = Vector2(-183.19221, 723.69666)
+rotation = 0.66132194
+texture = SubResource("PlaceholderTexture2D_74gq0")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Test2D" unique_id=1551383998]
+position = Vector2(-324.88147, 903.5175)
+rotation = 0.66132194
+texture = SubResource("PlaceholderTexture2D_sasra")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Test2D" unique_id=694940658]
+position = Vector2(-87.36296, 602.07776)
+rotation = 0.66132194
+texture = SubResource("PlaceholderTexture2D_74gq0")

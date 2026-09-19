@@ -1,16 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://c38ya1cpcilx3"]
+[gd_scene format=3 uid="uid://c38ya1cpcilx3"]
 
 [ext_resource type="Texture2D" uid="uid://rqldw7lgwnof" path="res://addons/alignment-tool/icons/HLeft.svg" id="1_nddj3"]
-[ext_resource type="Script" path="res://addons/alignment-tool/AlignToolButton.gd" id="2_eyynw"]
+[ext_resource type="Script" uid="uid://cwyit2p26fatv" path="res://addons/alignment-tool/AlignToolButton.gd" id="2_eyynw"]
 [ext_resource type="Texture2D" uid="uid://ct3bkj2w3a43o" path="res://addons/alignment-tool/icons/HCenter.svg" id="3_tljn4"]
 [ext_resource type="Texture2D" uid="uid://dcbwpxek7jj3m" path="res://addons/alignment-tool/icons/HRight.svg" id="4_5o8fk"]
 [ext_resource type="Texture2D" uid="uid://dwjfhrikfvudf" path="res://addons/alignment-tool/icons/HSpace.svg" id="5_0exq5"]
+[ext_resource type="Texture2D" uid="uid://cav006kw1bpui" path="res://addons/alignment-tool/icons/HDistribute.svg" id="5_qexu1"]
 [ext_resource type="Texture2D" uid="uid://b6hpk13503wg6" path="res://addons/alignment-tool/icons/VBottom.svg" id="6_o3vd2"]
 [ext_resource type="Texture2D" uid="uid://bhlbv8nmrxkho" path="res://addons/alignment-tool/icons/VCenter.svg" id="7_hldas"]
 [ext_resource type="Texture2D" uid="uid://bd75uukdpw4ff" path="res://addons/alignment-tool/icons/VTop.svg" id="8_7i817"]
 [ext_resource type="Texture2D" uid="uid://bggdatiph18bk" path="res://addons/alignment-tool/icons/VSpace.svg" id="9_uex0k"]
+[ext_resource type="Texture2D" uid="uid://dmknjot1nk05p" path="res://addons/alignment-tool/icons/VDistribute.svg" id="10_nsc47"]
 
-[node name="AlignToolButton" type="Button"]
+[node name="AlignToolButton" type="Button" unique_id=1817940593]
 texture_filter = 1
 offset_right = 24.0
 offset_bottom = 24.0
@@ -20,138 +22,180 @@ icon = ExtResource("1_nddj3")
 flat = true
 script = ExtResource("2_eyynw")
 
-[node name="Popup" type="PopupPanel" parent="."]
-position = Vector2i(0, 24)
-size = Vector2i(164, 236)
+[node name="Popup" type="PopupPanel" parent="." unique_id=1329802457]
+oversampling_override = 1.0
+size = Vector2i(298, 361)
 visible = true
 
-[node name="VBox" type="VBoxContainer" parent="Popup"]
+[node name="VBox" type="VBoxContainer" parent="Popup" unique_id=460628355]
 texture_filter = 1
 offset_left = 4.0
 offset_top = 4.0
-offset_right = 160.0
-offset_bottom = 232.0
+offset_right = 294.0
+offset_bottom = 357.0
 
-[node name="AlignX" type="VBoxContainer" parent="Popup/VBox"]
+[node name="AlignX" type="VBoxContainer" parent="Popup/VBox" unique_id=1043963413]
 layout_mode = 2
 
-[node name="Header" type="HBoxContainer" parent="Popup/VBox/AlignX"]
+[node name="Header" type="HBoxContainer" parent="Popup/VBox/AlignX" unique_id=147264933]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Popup/VBox/AlignX/Header"]
+[node name="Label" type="Label" parent="Popup/VBox/AlignX/Header" unique_id=574287966]
 layout_mode = 2
 text = "X Axis"
 
-[node name="HSep" type="HSeparator" parent="Popup/VBox/AlignX/Header"]
+[node name="HSep" type="HSeparator" parent="Popup/VBox/AlignX/Header" unique_id=259667100]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBox" type="HBoxContainer" parent="Popup/VBox/AlignX"]
+[node name="HBox" type="HBoxContainer" parent="Popup/VBox/AlignX" unique_id=1289384648]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="X_MIN" type="Button" parent="Popup/VBox/AlignX/HBox"]
+[node name="X_MIN" type="Button" parent="Popup/VBox/AlignX/HBox" unique_id=1630353045]
 layout_mode = 2
 icon = ExtResource("1_nddj3")
 flat = true
 
-[node name="X_CENTER" type="Button" parent="Popup/VBox/AlignX/HBox"]
+[node name="X_CENTER" type="Button" parent="Popup/VBox/AlignX/HBox" unique_id=785106009]
 layout_mode = 2
 icon = ExtResource("3_tljn4")
 flat = true
 
-[node name="X_MAX" type="Button" parent="Popup/VBox/AlignX/HBox"]
+[node name="X_MAX" type="Button" parent="Popup/VBox/AlignX/HBox" unique_id=923842030]
 layout_mode = 2
 icon = ExtResource("4_5o8fk")
 flat = true
 
-[node name="VSep" type="VSeparator" parent="Popup/VBox/AlignX/HBox"]
+[node name="VSep" type="VSeparator" parent="Popup/VBox/AlignX/HBox" unique_id=1860967726]
 layout_mode = 2
 
-[node name="X_SPACE" type="Button" parent="Popup/VBox/AlignX/HBox"]
+[node name="X_DISTRIBUTE" type="Button" parent="Popup/VBox/AlignX/HBox" unique_id=1859329559]
+layout_mode = 2
+icon = ExtResource("5_qexu1")
+flat = true
+
+[node name="X_SEPARATE" type="Button" parent="Popup/VBox/AlignX/HBox" unique_id=410681576]
 layout_mode = 2
 icon = ExtResource("5_0exq5")
 flat = true
 
-[node name="AlignY" type="VBoxContainer" parent="Popup/VBox"]
+[node name="AlignY" type="VBoxContainer" parent="Popup/VBox" unique_id=2018558991]
 layout_mode = 2
 
-[node name="Header" type="HBoxContainer" parent="Popup/VBox/AlignY"]
+[node name="Header" type="HBoxContainer" parent="Popup/VBox/AlignY" unique_id=1713251733]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Popup/VBox/AlignY/Header"]
+[node name="Label" type="Label" parent="Popup/VBox/AlignY/Header" unique_id=1145673936]
 layout_mode = 2
 text = "Y Axis"
 
-[node name="HSep" type="HSeparator" parent="Popup/VBox/AlignY/Header"]
+[node name="HSep" type="HSeparator" parent="Popup/VBox/AlignY/Header" unique_id=488371324]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBox" type="HBoxContainer" parent="Popup/VBox/AlignY"]
+[node name="HBox" type="HBoxContainer" parent="Popup/VBox/AlignY" unique_id=1999906933]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="Y_MIN" type="Button" parent="Popup/VBox/AlignY/HBox"]
+[node name="Y_MIN" type="Button" parent="Popup/VBox/AlignY/HBox" unique_id=2142247831]
 layout_mode = 2
 icon = ExtResource("6_o3vd2")
 flat = true
 
-[node name="Y_CENTER" type="Button" parent="Popup/VBox/AlignY/HBox"]
+[node name="Y_CENTER" type="Button" parent="Popup/VBox/AlignY/HBox" unique_id=790257883]
 layout_mode = 2
 icon = ExtResource("7_hldas")
 flat = true
 
-[node name="Y_MAX" type="Button" parent="Popup/VBox/AlignY/HBox"]
+[node name="Y_MAX" type="Button" parent="Popup/VBox/AlignY/HBox" unique_id=2066102748]
 layout_mode = 2
 icon = ExtResource("8_7i817")
 flat = true
 
-[node name="VSep" type="VSeparator" parent="Popup/VBox/AlignY/HBox"]
+[node name="VSep" type="VSeparator" parent="Popup/VBox/AlignY/HBox" unique_id=1831783429]
 layout_mode = 2
 
-[node name="Y_SPACE" type="Button" parent="Popup/VBox/AlignY/HBox"]
+[node name="Y_DISTRIBUTE" type="Button" parent="Popup/VBox/AlignY/HBox" unique_id=450049810]
+layout_mode = 2
+icon = ExtResource("10_nsc47")
+flat = true
+
+[node name="Y_SEPARATE" type="Button" parent="Popup/VBox/AlignY/HBox" unique_id=1365220999]
 layout_mode = 2
 icon = ExtResource("9_uex0k")
 flat = true
 
-[node name="AlignZ" type="VBoxContainer" parent="Popup/VBox"]
+[node name="AlignZ" type="VBoxContainer" parent="Popup/VBox" unique_id=1347187565]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="Header" type="HBoxContainer" parent="Popup/VBox/AlignZ"]
+[node name="Header" type="HBoxContainer" parent="Popup/VBox/AlignZ" unique_id=2101305929]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Popup/VBox/AlignZ/Header"]
+[node name="Label" type="Label" parent="Popup/VBox/AlignZ/Header" unique_id=584581057]
 layout_mode = 2
 text = "Z Axis"
 
-[node name="HSep" type="HSeparator" parent="Popup/VBox/AlignZ/Header"]
+[node name="HSep" type="HSeparator" parent="Popup/VBox/AlignZ/Header" unique_id=1668423390]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBox" type="HBoxContainer" parent="Popup/VBox/AlignZ"]
+[node name="HBox" type="HBoxContainer" parent="Popup/VBox/AlignZ" unique_id=47563477]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="Z_MIN" type="Button" parent="Popup/VBox/AlignZ/HBox"]
+[node name="Z_MIN" type="Button" parent="Popup/VBox/AlignZ/HBox" unique_id=2087664871]
 layout_mode = 2
 icon = ExtResource("1_nddj3")
 flat = true
 
-[node name="Z_CENTER" type="Button" parent="Popup/VBox/AlignZ/HBox"]
+[node name="Z_CENTER" type="Button" parent="Popup/VBox/AlignZ/HBox" unique_id=725594867]
 layout_mode = 2
 icon = ExtResource("3_tljn4")
 flat = true
 
-[node name="Z_MAX" type="Button" parent="Popup/VBox/AlignZ/HBox"]
+[node name="Z_MAX" type="Button" parent="Popup/VBox/AlignZ/HBox" unique_id=220140586]
 layout_mode = 2
 icon = ExtResource("4_5o8fk")
 flat = true
 
-[node name="VSep" type="VSeparator" parent="Popup/VBox/AlignZ/HBox"]
+[node name="VSep" type="VSeparator" parent="Popup/VBox/AlignZ/HBox" unique_id=1928772783]
 layout_mode = 2
 
-[node name="Z_SPACE" type="Button" parent="Popup/VBox/AlignZ/HBox"]
+[node name="Z_DISTRIBUTE" type="Button" parent="Popup/VBox/AlignZ/HBox" unique_id=1177925773]
+layout_mode = 2
+icon = ExtResource("5_qexu1")
+flat = true
+
+[node name="Z_SEPARATE" type="Button" parent="Popup/VBox/AlignZ/HBox" unique_id=1445859344]
 layout_mode = 2
 icon = ExtResource("5_0exq5")
 flat = true
+
+[node name="Options" type="GridContainer" parent="Popup/VBox" unique_id=1225639860]
+layout_mode = 2
+size_flags_horizontal = 0
+columns = 3
+
+[node name="GlobalLabel" type="Label" parent="Popup/VBox/Options" unique_id=189305873]
+layout_mode = 2
+text = "Global"
+
+[node name="GlobalLocalCheckButton" type="CheckButton" parent="Popup/VBox/Options" unique_id=562350108]
+layout_mode = 2
+
+[node name="LocalLabel" type="Label" parent="Popup/VBox/Options" unique_id=399428597]
+layout_mode = 2
+text = "Local"
+
+[node name="BoundsLabel" type="Label" parent="Popup/VBox/Options" unique_id=1278596750]
+layout_mode = 2
+text = "Bounds"
+
+[node name="BoundsItemCheckButton" type="CheckButton" parent="Popup/VBox/Options" unique_id=1965520631]
+layout_mode = 2
+
+[node name="ActiveLabel" type="Label" parent="Popup/VBox/Options" unique_id=117881006]
+layout_mode = 2
+text = "Active"

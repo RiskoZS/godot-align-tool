@@ -22,6 +22,10 @@ config/icon="res://icon.png"
 
 project/assembly_name="Alignment Tool"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/alignment-tool/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
