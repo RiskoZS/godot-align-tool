@@ -14,6 +14,10 @@ Features:
 
 ![Demo](assets/demo.webp)
 
+[Screenshot: 2D](assets/picture2d.png)
+
+[Screenshot: 3D](assets/picture3d.png)
+
 ## Installation
 
 Install it via the [Godot Asset Store](https://store.godotengine.org/asset/riskozs/godot-align-tool/), or download this repo and put the `align-tool` folder into `<YOUR_PROJECT>/addons/`.
