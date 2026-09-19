@@ -39,7 +39,18 @@ func _get_transformed_rect(incoming_node: CanvasItem) -> Rect2:
 	return (_node.get_global_transform().affine_inverse() * incoming_node.get_global_transform()) * _get_node_rect(incoming_node)
 
 static func _get_node_rect(node: CanvasItem) -> Rect2:
-	if node.has_method("_edit_get_rect") and not node is Marker2D:
+	# Unlike in 3D, 2D nodes generally do not have a standardized function to return a local-space
+	# bounding rect. We can use the internal _edit_get_rect() function, but that doesn't entirely
+	# work because it e.g. treats a Marker2D's gizmos as part of its bounding rect. So, we need to
+	# handle this on a case-by-case basis.
+
+	if node is Marker2D:
+		return Rect2()
+
+	elif node.has_method("_edit_get_rect"):
 		return node._edit_get_rect()
+
+	elif node.has_method("get_rect"):
+		return node.get_rect()
 
 	return Rect2()

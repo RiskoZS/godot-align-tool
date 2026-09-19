@@ -3,8 +3,8 @@
 @tool
 @abstract extends RefCounted
 
-## Return the [class AABB] of this node, in the node's coordinate space. For 2D
-## nodes, return an AABB with the Z size and position set to 0.
+## Return the [class AABB] of this node in the node's local space. For 2D nodes,
+## return an AABB with the Z size and position set to 0.
 @abstract func get_aabb() -> AABB
 
 ## Return the global position of this node when the item was created. For 2D
