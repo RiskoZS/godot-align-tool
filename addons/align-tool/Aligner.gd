@@ -13,7 +13,7 @@ var _button: AlignToolButton
 var _selection_filter: Callable
 var _alignable_factory: Callable
 
-var _aligning_items
+var _aligning_items: Array = []
 
 
 ## Creates a new Aligner.
@@ -58,7 +58,7 @@ func _get_relevant_selected_nodes() -> Array[Node]:
 ## When the popup is opened, create the [class AlignableItem]s, which saves their original transforms.
 func _popup_toggled(is_visible: bool) -> void:
 	if not is_visible:
-		_aligning_items = null
+		_aligning_items.clear()
 		return
 
 	_aligning_items = _get_relevant_selected_nodes().map(_alignable_factory)
@@ -66,7 +66,7 @@ func _popup_toggled(is_visible: bool) -> void:
 
 ## Perform the align/spacing operation; this is where the main business logic happens
 func _align_button_pressed(axis: AlignToolButton.Axis, alignment: AlignToolButton.Alignment) -> void:
-	if not _aligning_items:
+	if _aligning_items.is_empty():
 		return
 
 	var undoRedoManager := _plugin.get_undo_redo()
