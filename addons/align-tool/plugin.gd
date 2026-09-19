@@ -25,6 +25,9 @@ func _enter_tree():
 		Aligner.new(self, button_3d, func(node): return node is Node3D,     AlignableItem3D.new),
 	]
 
+	for aligner in _aligners:
+		add_child(aligner)
+
 func _exit_tree():
 	for aligner in _aligners:
 		aligner.queue_free()
