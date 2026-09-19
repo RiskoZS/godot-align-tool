@@ -14,9 +14,7 @@ Features:
 
 ![Demo](assets/demo.webp)
 
-[Screenshot: 2D](assets/picture2d.png)
-
-[Screenshot: 3D](assets/picture3d.png)
+[Picture 1](assets/align_and_distribute.png) | [Picture 2](assets/supports_local_space.png) | [Picture 3](assets/align_to_item.png)
 
 ## Installation
 
