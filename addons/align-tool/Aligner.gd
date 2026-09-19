@@ -52,6 +52,8 @@ func _selection_changed() -> void:
 
 ## Returns a list of all selected transformable nodes that may be aligned by this Aligner
 func _get_relevant_selected_nodes() -> Array[Node]:
+	# get_transformable_selected_nodes() is deprecated in favour of get_top_selected_nodes(), but we probably want to
+	# support older Godot 4 versions...?
 	return _selection.get_transformable_selected_nodes().filter(_selection_filter)
 
 
