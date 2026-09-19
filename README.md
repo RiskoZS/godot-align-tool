@@ -2,7 +2,7 @@
 
 ![Icon](icon.png)
 
-A Godot plugin for aligning nodes, based on [zaevi's Godot Alignment Tool](https://github.com/zaevi/godot-alignment-tool).
+A Godot 4.x (4.5+) plugin for aligning nodes, based on [zaevi's Godot Alignment Tool](https://github.com/zaevi/godot-alignment-tool).
 
 Features:
 - Supports 3D, 2D and Control nodes
