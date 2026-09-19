@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcbwpxek7jj3m"
-path="res://.godot/imported/HRight.svg-8971c4d52fab2b86edb9e8bff461de21.ctex"
+uid="uid://b6hpk13503wg6"
+path="res://.godot/imported/VBottom.svg-2d620e212db9535679719dd4ca5f3d9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/alignment-tool/icons/HRight.svg"
-dest_files=["res://.godot/imported/HRight.svg-8971c4d52fab2b86edb9e8bff461de21.ctex"]
+source_file="res://addons/align-tool/icons/VBottom.svg"
+dest_files=["res://.godot/imported/VBottom.svg-2d620e212db9535679719dd4ca5f3d9f.ctex"]
 
 [params]
 

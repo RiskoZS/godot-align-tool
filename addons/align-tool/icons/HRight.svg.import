@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwjfhrikfvudf"
-path="res://.godot/imported/HSpace.svg-9f07fc203e8df980eed203003a3d3c18.ctex"
+uid="uid://dcbwpxek7jj3m"
+path="res://.godot/imported/HRight.svg-1ea041923e6ed40df614d7d284337c9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/alignment-tool/icons/HSpace.svg"
-dest_files=["res://.godot/imported/HSpace.svg-9f07fc203e8df980eed203003a3d3c18.ctex"]
+source_file="res://addons/align-tool/icons/HRight.svg"
+dest_files=["res://.godot/imported/HRight.svg-1ea041923e6ed40df614d7d284337c9e.ctex"]
 
 [params]
 

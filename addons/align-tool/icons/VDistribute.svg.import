@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhlbv8nmrxkho"
-path="res://.godot/imported/VCenter.svg-d162c32aac9dc1b525c75e46f7a722e9.ctex"
+uid="uid://dmknjot1nk05p"
+path="res://.godot/imported/VDistribute.svg-74ca10cd1e60d4bb307126651c539ccf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/alignment-tool/icons/VCenter.svg"
-dest_files=["res://.godot/imported/VCenter.svg-d162c32aac9dc1b525c75e46f7a722e9.ctex"]
+source_file="res://addons/align-tool/icons/VDistribute.svg"
+dest_files=["res://.godot/imported/VDistribute.svg-74ca10cd1e60d4bb307126651c539ccf.ctex"]
 
 [params]
 

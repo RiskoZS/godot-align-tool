@@ -14,17 +14,17 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Alignment Tool"
+config/name="Align Tool"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.png"
 
 [dotnet]
 
-project/assembly_name="Alignment Tool"
+project/assembly_name="Align Tool"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/alignment-tool/plugin.cfg")
+enabled=PackedStringArray("res://addons/align-tool/plugin.cfg")
 
 [rendering]
 

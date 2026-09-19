@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd75uukdpw4ff"
-path="res://.godot/imported/VTop.svg-c361577b7e4e6c64208bab6ea17843b7.ctex"
+uid="uid://cav006kw1bpui"
+path="res://.godot/imported/HDistribute.svg-3dd03678a081fa8b9d3b48276513638e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/alignment-tool/icons/VTop.svg"
-dest_files=["res://.godot/imported/VTop.svg-c361577b7e4e6c64208bab6ea17843b7.ctex"]
+source_file="res://addons/align-tool/icons/HDistribute.svg"
+dest_files=["res://.godot/imported/HDistribute.svg-3dd03678a081fa8b9d3b48276513638e.ctex"]
 
 [params]
 

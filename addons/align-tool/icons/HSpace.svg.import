@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rqldw7lgwnof"
-path="res://.godot/imported/HLeft.svg-4dcf82806c8f5ec23c9b665d779d456a.ctex"
+uid="uid://dwjfhrikfvudf"
+path="res://.godot/imported/HSpace.svg-41b98e7b93f213c85bc9d54dcffdfbf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/alignment-tool/icons/HLeft.svg"
-dest_files=["res://.godot/imported/HLeft.svg-4dcf82806c8f5ec23c9b665d779d456a.ctex"]
+source_file="res://addons/align-tool/icons/HSpace.svg"
+dest_files=["res://.godot/imported/HSpace.svg-41b98e7b93f213c85bc9d54dcffdfbf7.ctex"]
 
 [params]
 
